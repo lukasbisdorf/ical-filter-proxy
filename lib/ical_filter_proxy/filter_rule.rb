@@ -27,6 +27,8 @@ module IcalFilterProxy
           event_data == value
         when 'startswith'
           event_data.start_with?(value)
+        when 'endswith'
+          event_data.end_with?(value)
         when 'includes'
           event_data.include?(value)
         when 'matches'
